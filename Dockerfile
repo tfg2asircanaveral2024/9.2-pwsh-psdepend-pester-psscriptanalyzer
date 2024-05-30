@@ -10,6 +10,6 @@ RUN chmod u+x script-instalacion-pwsh.sh && sh -c ./script-instalacion-pwsh.sh &
 
 # ejecutar el script que le da forma a nuestra instancia de Powershell, instalando módulos, etc
 COPY script-pwsh.ps1 .
-RUN pwsh -NonInteractive -c ./script-pwsh.ps1 
+RUN pwsh ./script-pwsh.ps1
 
 WORKDIR /
